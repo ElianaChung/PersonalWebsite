@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet"> </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+  <div class="hero-image">
+    <img src="image.png" alt="Eliana Chung" />
+  </div>
+  <div class="hero-text">
+    <h1>My name is Eliana Chung.</h1>
+    <p>Decoding the human mind through music and machine learning.</p>
+    <a href="#contact" class="btn-primary">Contact Me</a>
+  </div>
+</section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          Hi, I'm Eliana Chung, a high schooler who leads, builds, and asks questions at the intersection of people and technology. I rebuilt Music Mentors from the ground up, lead my school's marching band as drum major, and spent this summer diving into machine learning at CMU. Lately I've been curious about a specific question: what can machine learning teach us about how people think? Explore my projects below, or reach out at elianachung2010@gmail.com.
+        </p>
+      </section>
+
+      <section id="work" class="section">
+        <h2>Work Samples</h2>
+        <div class="project-grid">
+          <button class="project-card" data-title="Music Mentors" 
+          data-role="Re-Founder and President" 
+          data-details="Rebuilt a dormant club from scratch — designed the leadership structure, 
+          mentor-matching system, and training program; recruited and onboarded new officers." 
+          data-outcome="TBD.">
+            <h3>Music Mentors
+            </h3>
+            <p>Rebuilt a dormant club pairing high school musicians with middle school mentees.</p>
+          </button>
+
+          <button class="project-card" 
+          data-title="Predicting Help-Seeking Behavior with ML" 
+          data-role="Team Member — Concept Lead & Presentation" 
+          data-details="Learned core ML concepts (including one-hot encoding, model evaluation metrics, 
+          and how logistic regression, random forest, and perceptron models differ) well enough to translate 
+          them into a clear, non-technical presentation for our audience. Contributed to survey design 
+          discussions and built the presentation slides, while teammates implemented the models in Python (Colab/pandas)."
+          data-outcome="Our team determined logistic regression performed best, evaluated using F1 score, accuracy, MCC, 
+          and AUC. We then presented findings and methodology at the end of the CMU Pre-College program.">
+            <h3>CMU CS Scholars summer program</h3>
+            <p>Researched a student-help-seeking gap and built a data-driven presentation on 
+              which ML model best predicted it, using survey data from 200+ CMU Pre-College students.</p>
+          </button>
+
+          <button class="project-card" 
+          data-title="DJHS Marching Band Leadership" 
+          data-role="Head Drum Major" 
+          data-details="As Head Drum Major, I lead a team of student drum majors — teaching and correcting
+           conducting technique, and ensuring assistant drum majors are fulfilling their leadership responsibilities. 
+           I also serve as a teacher to band members who fall behind, help run rehearsals in coordination with directors, 
+           and sit on the band's leadership team. Beyond the technical duties, I focus on team morale — 
+           giving pep talks before high-pressure events like Buckeye Invitational and OMEA competitions to help drum majors 
+           manage the pressure of their role." 
+          data-outcome="TBD.">
+            <h3>DJHS Marching Band Leadership</h3>
+            <p>Lead a team of student drum majors as Head Drum Major, overseeing conducting instruction, 
+              rehearsal coordination, and team morale for competitive marching band performances.</p>
+          </button>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <h2>Resume</h2>
+        <p>Download my resume here:</p>
+        <a href="resume.pdf" download>Download Resume (PDF)</a>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: elianachung2010@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/elianachung</p>
+      </section>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close modal">×</button>
+        <h3 id="modal-title">Project</h3>
+        <p><strong>Role:</strong> <span id="modal-role"></span></p>
+        <p><strong>What I did:</strong> <span id="modal-details"></span></p>
+        <p><strong>Outcome:</strong> <span id="modal-outcome"></span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
